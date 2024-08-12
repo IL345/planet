@@ -1,0 +1,125 @@
+<h5>PLANET MILIK ILHAM A K</h5>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.solar-system {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sun {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, #ffcc00, #ff9900);
+    border-radius: 50%;
+    box-shadow: 0 0 50px rgba(255, 204, 0, 0.8);
+}
+
+.planet {
+    position: absolute;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0.7;
+    transform-origin: center;
+}
+
+.planet1 {
+    width: 30px;
+    height: 30px;
+    animation: orbit1 10s linear infinite;
+}
+
+.planet2 {
+    width: 40px;
+    height: 40px;
+    animation: orbit2 15s linear infinite;
+}
+
+.planet3 {
+    width: 50px;
+    height: 50px;
+    animation: orbit3 20s linear infinite;
+}
+
+.planet4 {
+    width: 60px;
+    height: 60px;
+    animation: orbit4 25s linear infinite;
+}
+
+@keyframes orbit1 {
+    0% {
+        transform: rotate(0deg) translateX(120px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(120px) rotate(-360deg);
+    }
+}
+
+@keyframes orbit2 {
+    0% {
+        transform: rotate(0deg) translateX(180px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(180px) rotate(-360deg);
+    }
+}
+
+@keyframes orbit3 {
+    0% {
+        transform: rotate(0deg) translateX(250px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(250px) rotate(-360deg);
+    }
+}
+
+@keyframes orbit4 {
+    0% {
+        transform: rotate(0deg) translateX(320px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(320px) rotate(-360deg);
+    }
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System Animation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="solar-system">
+        <div class="sun"></div>
+        <div class="planet planet1"></div>
+        <div class="planet planet2"></div>
+        <div class="planet planet3"></div>
+        <div class="planet planet4"></div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        // Script.js file is left empty as CSS handles the animation
+
+    </script>
+</body>
+</html>
